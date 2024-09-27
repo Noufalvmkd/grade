@@ -1,3 +1,17 @@
+
+.container{
+    width: 400px;
+    height: 700px;
+    margin: 40px auto;
+    background-color: #81f0ff;
+    text-align: center;
+    
+}
+input{
+    margin-top: 50px;
+}
+
 h3{
-    color: blue;
+    
+    color: rgb(14, 14, 255);
 }

@@ -11,13 +11,16 @@ D+ (30-39)
 D (20-29)
 E (Below 20)*/
 
-result.textContent="Result Will Show Here"
+
 
 
 function gradeEval(){
     
     let val = input.value;
-   
+  if(input.value==='' || input.value >100 || !input.value.match(/^\d+/) ) {
+    result.textContent="Please enter a valid mark between 0 and 100."
+    return;
+  }
     
 
 if(val>=90 && val<=100){
@@ -47,7 +50,7 @@ else{
  
 }
 
-val=""
+input.value='';
 
 }
 
@@ -57,4 +60,4 @@ console.log(result)
 
 btn.addEventListener("click",gradeEval);
 
-result.textContent="PASSED , GRADE A+"
+
